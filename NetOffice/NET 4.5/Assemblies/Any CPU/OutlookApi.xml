@@ -4,96 +4,6 @@
         <name>OutlookApi</name>
     </assembly>
     <members>
-        <member name="T:NetOffice.OutlookApi.Tools.ApplicationUtils">
-            <summary>
-            Application related utils
-            </summary>
-        </member>
-        <member name="M:NetOffice.OutlookApi.Tools.ApplicationUtils.#ctor(NetOffice.OutlookApi.Tools.CommonUtils)">
-            <summary>
-            Creates an instance of the class
-            </summary>
-            <param name="owner">owner instance</param>
-        </member>
-        <member name="P:NetOffice.OutlookApi.Tools.ApplicationUtils.Visible">
-            <summary>
-            Host application is currently visible
-            </summary>
-        </member>
-        <member name="T:NetOffice.OutlookApi.Tools.CommonUtils">
-            <summary>
-            Various helper for common tasks
-            </summary>
-        </member>
-        <member name="M:NetOffice.OutlookApi.Tools.CommonUtils.#ctor(NetOffice.OutlookApi.Application)">
-            <summary>
-            Creates an instance of the application
-            </summary>
-            <param name="application">owner application</param>
-        </member>
-        <member name="M:NetOffice.OutlookApi.Tools.CommonUtils.#ctor(NetOffice.OutlookApi.Application,System.Reflection.Assembly)">
-            <summary>
-            Creates an instance of the application
-            </summary>
-            <param name="application">owner application</param>
-            <param name="ownerAssembly">owner assembly</param>
-        </member>
-        <member name="M:NetOffice.OutlookApi.Tools.CommonUtils.#ctor(NetOffice.Tools.COMAddinBase,System.Boolean)">
-            <summary>
-            Creates an instance of the class
-            </summary>
-            <param name="owner">addin owner instance</param>
-            <param name="isAutomation">host application is started for automation</param>
-        </member>
-        <member name="M:NetOffice.OutlookApi.Tools.CommonUtils.#ctor(NetOffice.Tools.COMAddinBase,System.Boolean,System.Reflection.Assembly)">
-            <summary>
-            Creates an instance of the class
-            </summary>
-            <param name="owner">addin owner</param>
-            <param name="isAutomation">indicates the host application is currently in automation</param>
-            <param name="ownerAssembly">owner application</param>
-        </member>
-        <member name="M:NetOffice.OutlookApi.Tools.CommonUtils.OnCreateApplicationUtils">
-            <summary>
-            Creates an instance of ApplicationUtils
-            </summary>
-            <returns>instance of ApplicationUtils</returns>
-        </member>
-        <member name="M:NetOffice.OutlookApi.Tools.CommonUtils.OnCreateDialogUtils">
-            <summary>
-            Creates an instance of DialogUtils
-            </summary>
-            <returns>instance of DialogUtils</returns>
-        </member>
-        <member name="P:NetOffice.OutlookApi.Tools.CommonUtils.Application">
-            <summary>
-            Application related utils
-            </summary>
-        </member>
-        <member name="T:NetOffice.OutlookApi.Tools.OutlookDialogUtils">
-            <summary>
-            Outlook dialog related utils
-            </summary>
-        </member>
-        <member name="M:NetOffice.OutlookApi.Tools.OutlookDialogUtils.#ctor(NetOffice.OutlookApi.Tools.CommonUtils)">
-            <summary>
-            Creates an instance of the class
-            </summary>
-            <param name="owner">owner instance</param>
-        </member>
-        <member name="M:NetOffice.OutlookApi.Tools.OutlookDialogUtils.TryGetApplicationVisible(System.Boolean)">
-            <summary>
-            Try to detect the visibilty of host application main window.
-            The implementation try to find a visible Outlook application main window and returns true if found.
-            </summary>
-            <param name="defaultResult">fallback result if its failed</param>
-            <returns>true if application is visible, otherwise false</returns>
-        </member>
-        <member name="P:NetOffice.OutlookApi.Tools.OutlookDialogUtils.HostVisible">
-            <summary>
-            Host application is currently visible
-            </summary>
-        </member>
         <member name="T:OutlookApi.Utils.ProjectInfo">
             <summary>
             necessary factory info, used from NetOffice.Factory while Initialize()
@@ -52181,6 +52091,96 @@
             Called after any visibility changes because the UserControl.VisibleChanged event doesnt work as expected in a task pane scenario
             </summary>
             <param name="visible">the current visibility for the instance</param>
+        </member>
+        <member name="T:NetOffice.OutlookApi.Tools.Utils.ApplicationUtils">
+            <summary>
+            Application related utils
+            </summary>
+        </member>
+        <member name="M:NetOffice.OutlookApi.Tools.Utils.ApplicationUtils.#ctor(NetOffice.OutlookApi.Tools.Utils.CommonUtils)">
+            <summary>
+            Creates an instance of the class
+            </summary>
+            <param name="owner">owner instance</param>
+        </member>
+        <member name="P:NetOffice.OutlookApi.Tools.Utils.ApplicationUtils.Visible">
+            <summary>
+            Host application is currently visible
+            </summary>
+        </member>
+        <member name="T:NetOffice.OutlookApi.Tools.Utils.CommonUtils">
+            <summary>
+            Various helper for common tasks
+            </summary>
+        </member>
+        <member name="M:NetOffice.OutlookApi.Tools.Utils.CommonUtils.#ctor(NetOffice.OutlookApi.Application)">
+            <summary>
+            Creates an instance of the application
+            </summary>
+            <param name="application">owner application</param>
+        </member>
+        <member name="M:NetOffice.OutlookApi.Tools.Utils.CommonUtils.#ctor(NetOffice.OutlookApi.Application,System.Reflection.Assembly)">
+            <summary>
+            Creates an instance of the application
+            </summary>
+            <param name="application">owner application</param>
+            <param name="ownerAssembly">owner assembly</param>
+        </member>
+        <member name="M:NetOffice.OutlookApi.Tools.Utils.CommonUtils.#ctor(NetOffice.Tools.COMAddinBase,System.Boolean)">
+            <summary>
+            Creates an instance of the class
+            </summary>
+            <param name="owner">addin owner instance</param>
+            <param name="isAutomation">host application is started for automation</param>
+        </member>
+        <member name="M:NetOffice.OutlookApi.Tools.Utils.CommonUtils.#ctor(NetOffice.Tools.COMAddinBase,System.Boolean,System.Reflection.Assembly)">
+            <summary>
+            Creates an instance of the class
+            </summary>
+            <param name="owner">addin owner</param>
+            <param name="isAutomation">indicates the host application is currently in automation</param>
+            <param name="ownerAssembly">owner application</param>
+        </member>
+        <member name="M:NetOffice.OutlookApi.Tools.Utils.CommonUtils.OnCreateApplicationUtils">
+            <summary>
+            Creates an instance of ApplicationUtils
+            </summary>
+            <returns>instance of ApplicationUtils</returns>
+        </member>
+        <member name="M:NetOffice.OutlookApi.Tools.Utils.CommonUtils.OnCreateDialogUtils">
+            <summary>
+            Creates an instance of DialogUtils
+            </summary>
+            <returns>instance of DialogUtils</returns>
+        </member>
+        <member name="P:NetOffice.OutlookApi.Tools.Utils.CommonUtils.Application">
+            <summary>
+            Application related utils
+            </summary>
+        </member>
+        <member name="T:NetOffice.OutlookApi.Tools.Utils.OutlookDialogUtils">
+            <summary>
+            Outlook dialog related utils
+            </summary>
+        </member>
+        <member name="M:NetOffice.OutlookApi.Tools.Utils.OutlookDialogUtils.#ctor(NetOffice.OutlookApi.Tools.Utils.CommonUtils)">
+            <summary>
+            Creates an instance of the class
+            </summary>
+            <param name="owner">owner instance</param>
+        </member>
+        <member name="M:NetOffice.OutlookApi.Tools.Utils.OutlookDialogUtils.TryGetApplicationVisible(System.Boolean)">
+            <summary>
+            Try to detect the visibilty of host application main window.
+            The implementation try to find a visible Outlook application main window and returns true if found.
+            </summary>
+            <param name="defaultResult">fallback result if its failed</param>
+            <returns>true if application is visible, otherwise false</returns>
+        </member>
+        <member name="P:NetOffice.OutlookApi.Tools.Utils.OutlookDialogUtils.HostVisible">
+            <summary>
+            Host application is currently visible
+            </summary>
         </member>
     </members>
 </doc>

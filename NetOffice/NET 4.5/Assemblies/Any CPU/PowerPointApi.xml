@@ -4,72 +4,12 @@
         <name>PowerPointApi</name>
     </assembly>
     <members>
-        <member name="T:NetOffice.PowerPointApi.Tools.CommonUtils">
-            <summary>
-            Various helper for common tasks
-            </summary>
-        </member>
-        <member name="M:NetOffice.PowerPointApi.Tools.CommonUtils.#ctor(NetOffice.PowerPointApi.Application)">
-            <summary>
-            Creates an instance of the application
-            </summary>
-            <param name="application">owner application</param>
-        </member>
-        <member name="M:NetOffice.PowerPointApi.Tools.CommonUtils.#ctor(NetOffice.PowerPointApi.Application,System.Reflection.Assembly)">
-            <summary>
-            Creates an instance of the application
-            </summary>
-            <param name="application">owner application</param>
-            <param name="ownerAssembly">owner assembly</param>
-        </member>
-        <member name="M:NetOffice.PowerPointApi.Tools.CommonUtils.#ctor(NetOffice.Tools.COMAddinBase,System.Boolean)">
-            <summary>
-            Creates an instance of the class
-            </summary>
-            <param name="owner">addin owner instance</param>
-            <param name="isAutomation">host application is started for automation</param>
-        </member>
-        <member name="M:NetOffice.PowerPointApi.Tools.CommonUtils.#ctor(NetOffice.Tools.COMAddinBase,System.Boolean,System.Reflection.Assembly)">
-            <summary>
-            Creates an instance of the class
-            </summary>
-            <param name="owner">addin owner</param>
-            <param name="isAutomation">indicates the host application is currently in automation</param>
-            <param name="ownerAssembly">owner application</param>
-        </member>
-        <member name="M:NetOffice.PowerPointApi.Tools.CommonUtils.OnCreateApplicationUtils">
-            <summary>
-            Creates an instance of ApplicationUtils
-            </summary>
-            <returns>instance of ApplicationUtils</returns>
-        </member>
-        <member name="M:NetOffice.PowerPointApi.Tools.CommonUtils.OnCreateFileUtils">
-            <summary>
-            Creates an instance of FileUtils
-            </summary>
-            <returns>instance of FileUtils</returns>
-        </member>
-        <member name="P:NetOffice.PowerPointApi.Tools.CommonUtils.File">
-            <summary>
-            File related utils
-            </summary>
-        </member>
-        <member name="P:NetOffice.PowerPointApi.Tools.CommonUtils.Application">
-            <summary>
-            Application related utils
-            </summary>
-        </member>
-        <member name="P:NetOffice.PowerPointApi.Tools.CommonUtils.PowerPointApplication">
-            <summary>
-            Encapsulate the owner application to make accessible for child utils
-            </summary>
-        </member>
         <member name="T:NetOffice.PowerPointApi.Tools.Utils.ApplicationUtils">
             <summary>
             Application related utils
             </summary>
         </member>
-        <member name="M:NetOffice.PowerPointApi.Tools.Utils.ApplicationUtils.#ctor(NetOffice.PowerPointApi.Tools.CommonUtils)">
+        <member name="M:NetOffice.PowerPointApi.Tools.Utils.ApplicationUtils.#ctor(NetOffice.PowerPointApi.Tools.Utils.CommonUtils)">
             <summary>
             Creates an instance of the class
             </summary>
@@ -88,6 +28,66 @@
         <member name="P:NetOffice.PowerPointApi.Tools.Utils.ApplicationUtils.VTableApplication.HWND">
             <summary>
             Main window handle from application window
+            </summary>
+        </member>
+        <member name="T:NetOffice.PowerPointApi.Tools.Utils.CommonUtils">
+            <summary>
+            Various helper for common tasks
+            </summary>
+        </member>
+        <member name="M:NetOffice.PowerPointApi.Tools.Utils.CommonUtils.#ctor(NetOffice.PowerPointApi.Application)">
+            <summary>
+            Creates an instance of the application
+            </summary>
+            <param name="application">owner application</param>
+        </member>
+        <member name="M:NetOffice.PowerPointApi.Tools.Utils.CommonUtils.#ctor(NetOffice.PowerPointApi.Application,System.Reflection.Assembly)">
+            <summary>
+            Creates an instance of the application
+            </summary>
+            <param name="application">owner application</param>
+            <param name="ownerAssembly">owner assembly</param>
+        </member>
+        <member name="M:NetOffice.PowerPointApi.Tools.Utils.CommonUtils.#ctor(NetOffice.Tools.COMAddinBase,System.Boolean)">
+            <summary>
+            Creates an instance of the class
+            </summary>
+            <param name="owner">addin owner instance</param>
+            <param name="isAutomation">host application is started for automation</param>
+        </member>
+        <member name="M:NetOffice.PowerPointApi.Tools.Utils.CommonUtils.#ctor(NetOffice.Tools.COMAddinBase,System.Boolean,System.Reflection.Assembly)">
+            <summary>
+            Creates an instance of the class
+            </summary>
+            <param name="owner">addin owner</param>
+            <param name="isAutomation">indicates the host application is currently in automation</param>
+            <param name="ownerAssembly">owner application</param>
+        </member>
+        <member name="M:NetOffice.PowerPointApi.Tools.Utils.CommonUtils.OnCreateApplicationUtils">
+            <summary>
+            Creates an instance of ApplicationUtils
+            </summary>
+            <returns>instance of ApplicationUtils</returns>
+        </member>
+        <member name="M:NetOffice.PowerPointApi.Tools.Utils.CommonUtils.OnCreateFileUtils">
+            <summary>
+            Creates an instance of FileUtils
+            </summary>
+            <returns>instance of FileUtils</returns>
+        </member>
+        <member name="P:NetOffice.PowerPointApi.Tools.Utils.CommonUtils.File">
+            <summary>
+            File related utils
+            </summary>
+        </member>
+        <member name="P:NetOffice.PowerPointApi.Tools.Utils.CommonUtils.Application">
+            <summary>
+            Application related utils
+            </summary>
+        </member>
+        <member name="P:NetOffice.PowerPointApi.Tools.Utils.CommonUtils.PowerPointApplication">
+            <summary>
+            Encapsulate the owner application to make accessible for child utils
             </summary>
         </member>
         <member name="T:NetOffice.PowerPointApi.Tools.DocumentFormat">
@@ -130,7 +130,7 @@
             File related helper tools
             </summary>
         </member>
-        <member name="M:NetOffice.PowerPointApi.Tools.Utils.FileUtils.#ctor(NetOffice.PowerPointApi.Tools.CommonUtils)">
+        <member name="M:NetOffice.PowerPointApi.Tools.Utils.FileUtils.#ctor(NetOffice.PowerPointApi.Tools.Utils.CommonUtils)">
             <summary>
             Creates an instance of the class
             </summary>

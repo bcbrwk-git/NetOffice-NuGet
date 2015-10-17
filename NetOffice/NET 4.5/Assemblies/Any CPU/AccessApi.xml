@@ -4,32 +4,32 @@
         <name>AccessApi</name>
     </assembly>
     <members>
-        <member name="T:NetOffice.AccessApi.Tools.CommonUtils">
+        <member name="T:NetOffice.AccessApi.Tools.Utils.CommonUtils">
             <summary>
             Various helper for common tasks
             </summary>
         </member>
-        <member name="M:NetOffice.AccessApi.Tools.CommonUtils.#ctor(NetOffice.AccessApi.Application)">
+        <member name="M:NetOffice.AccessApi.Tools.Utils.CommonUtils.#ctor(NetOffice.AccessApi.Application)">
             <summary>
             Creates an instance of the application
             </summary>
             <param name="application">owner application</param>
         </member>
-        <member name="M:NetOffice.AccessApi.Tools.CommonUtils.#ctor(NetOffice.AccessApi.Application,System.Reflection.Assembly)">
+        <member name="M:NetOffice.AccessApi.Tools.Utils.CommonUtils.#ctor(NetOffice.AccessApi.Application,System.Reflection.Assembly)">
             <summary>
             Creates an instance of the application
             </summary>
             <param name="application">owner application</param>
             <param name="ownerAssembly">owner assembly</param>
         </member>
-        <member name="M:NetOffice.AccessApi.Tools.CommonUtils.#ctor(NetOffice.Tools.COMAddinBase,System.Boolean)">
+        <member name="M:NetOffice.AccessApi.Tools.Utils.CommonUtils.#ctor(NetOffice.Tools.COMAddinBase,System.Boolean)">
             <summary>
             Creates an instance of the class
             </summary>
             <param name="owner">addin owner instance</param>
             <param name="isAutomation">host application is started for automation</param>
         </member>
-        <member name="M:NetOffice.AccessApi.Tools.CommonUtils.#ctor(NetOffice.Tools.COMAddinBase,System.Boolean,System.Reflection.Assembly)">
+        <member name="M:NetOffice.AccessApi.Tools.Utils.CommonUtils.#ctor(NetOffice.Tools.COMAddinBase,System.Boolean,System.Reflection.Assembly)">
             <summary>
             Creates an instance of the class
             </summary>
@@ -37,13 +37,13 @@
             <param name="isAutomation">indicates the host application is currently in automation</param>
             <param name="ownerAssembly">owner application</param>
         </member>
-        <member name="M:NetOffice.AccessApi.Tools.CommonUtils.OnCreateFileUtils">
+        <member name="M:NetOffice.AccessApi.Tools.Utils.CommonUtils.OnCreateFileUtils">
             <summary>
             Creates an instance of FileUtils
             </summary>
             <returns>instance of FileUtils</returns>
         </member>
-        <member name="P:NetOffice.AccessApi.Tools.CommonUtils.File">
+        <member name="P:NetOffice.AccessApi.Tools.Utils.CommonUtils.File">
             <summary>
             File related utils
             </summary>
@@ -98,7 +98,7 @@
             File related helper tools
             </summary>
         </member>
-        <member name="M:NetOffice.AccessApi.Tools.Utils.FileUtils.#ctor(NetOffice.AccessApi.Tools.CommonUtils)">
+        <member name="M:NetOffice.AccessApi.Tools.Utils.FileUtils.#ctor(NetOffice.AccessApi.Tools.Utils.CommonUtils)">
             <summary>
             Creates an instance of the class
             </summary>

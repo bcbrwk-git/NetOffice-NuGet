@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>NetOffice.Core.Net40</id>
-        <version>1.7.3.0</version>
+        <version>1.7.4-pre-jun-28-2015</version>
         <title>NetOffice.Core.Net40</title>
         <authors>Sebastian Lange,Caio Proiete</authors>
         <owners>Caio Proiete</owners>

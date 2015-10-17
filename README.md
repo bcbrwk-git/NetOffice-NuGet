@@ -124,6 +124,9 @@ The alternative packages below contain only assemblies targeting a specific vers
 
 ## Release History
 
+ * **v1.7.4-pre-jun-28-2015** - 2015-10-17
+   - Contains assemblies of NetOffice 1.7.4-pre-jun-28-2015 released on Sun Jun 28, 2015 at 4:00 AM
+
  * **v1.7.3.0** - 2015-10-13
    - Contains assemblies of NetOffice 1.7.3 released on Wed Feb 25, 2015 at 4:00 AM
 

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>NetOffice.Outlook.Net40</id>
-        <version>1.7.3.0</version>
+        <version>1.7.4-pre-jun-28-2015</version>
         <title>NetOffice.Outlook.Net40</title>
         <authors>Sebastian Lange,Caio Proiete</authors>
         <owners>Caio Proiete</owners>
@@ -16,7 +16,7 @@
         <copyright />
         <tags>netoffice netoffice.outlook office outlook interop wrapper .net40 vsto</tags>
         <dependencies>
-            <dependency id="NetOffice.Core.Net40" version="1.7.3.0" />
+            <dependency id="NetOffice.Core.Net40" version="1.7.4-pre-jun-28-2015" />
         </dependencies>
     </metadata>
     <files>

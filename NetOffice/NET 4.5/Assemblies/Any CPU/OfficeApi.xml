@@ -20,174 +20,6 @@
               Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
             </summary>
         </member>
-        <member name="T:NetOffice.OfficeApi.Tools.CommonUtils">
-            <summary>
-            Various helper for common tasks
-            </summary>
-        </member>
-        <member name="M:NetOffice.OfficeApi.Tools.CommonUtils.#ctor(NetOffice.COMObject)">
-            <summary>
-            Creates an instance of the application
-            </summary>
-            <param name="application">owner application</param>
-        </member>
-        <member name="M:NetOffice.OfficeApi.Tools.CommonUtils.#ctor(NetOffice.COMObject,System.Reflection.Assembly)">
-            <summary>
-            Creates an instance of the application
-            </summary>
-            <param name="application">owner application</param>
-            <param name="ownerAssembly">owner assembly</param>
-        </member>
-        <member name="M:NetOffice.OfficeApi.Tools.CommonUtils.#ctor(NetOffice.Tools.COMAddinBase,System.Boolean)">
-            <summary>
-            Creates an instance of the class
-            </summary>
-            <param name="owner">addin owner instance</param>
-            <param name="isAutomation">host application is started for automation</param>
-        </member>
-        <member name="M:NetOffice.OfficeApi.Tools.CommonUtils.#ctor(NetOffice.Tools.COMAddinBase,System.Boolean,System.Reflection.Assembly)">
-            <summary>
-            Creates an instance of the class
-            </summary>
-            <param name="owner">addin owner</param>
-            <param name="isAutomation">indicates the host application is currently in automation</param>
-            <param name="ownerAssembly">owner application</param>
-        </member>
-        <member name="M:NetOffice.OfficeApi.Tools.CommonUtils.OnCreateDialogUtils">
-            <summary>
-            Creates an instance of DialogUtils
-            </summary>
-            <returns>instance of DialogUtils</returns>
-        </member>
-        <member name="M:NetOffice.OfficeApi.Tools.CommonUtils.OnCreateResourceUtils">
-            <summary>
-            Creates an instances of ResourceUtils
-            </summary>
-            <returns>instance of ResourceUtils</returns>
-        </member>
-        <member name="M:NetOffice.OfficeApi.Tools.CommonUtils.OnCreateTrayUtils">
-            <summary>
-            Creates an instance of TrayUtils
-            </summary>
-            <returns>instance of TrayUtils</returns>
-        </member>
-        <member name="M:NetOffice.OfficeApi.Tools.CommonUtils.OnCreateImageUtils">
-            <summary>
-            Creates an instance of ImageUtils
-            </summary>
-            <returns>instance of ImageUtils</returns>
-        </member>
-        <member name="M:NetOffice.OfficeApi.Tools.CommonUtils.OnCreateColorUtils">
-            <summary>
-            Creates an instance of FileUtils
-            </summary>
-            <returns>instance of ColorUtils</returns>
-        </member>
-        <member name="M:NetOffice.OfficeApi.Tools.CommonUtils.OnCreateAssemblyInfo">
-            <summary>
-            Creates an instance of AssemblyInfo
-            </summary>
-            <returns>instance of AssemblyInfo</returns>
-        </member>
-        <member name="M:NetOffice.OfficeApi.Tools.CommonUtils.OnCreateAppDomainInfo">
-            <summary>
-            Creates an instance of AppDomainInfo
-            </summary>
-            <returns>instance of AppDomainInfo</returns>
-        </member>
-        <member name="M:NetOffice.OfficeApi.Tools.CommonUtils.OnCreateEnvironmentInfo">
-            <summary>
-            Creates an instance of EnvironmentInfo
-            </summary>
-            <returns>instance of EnvironmentInfo</returns>
-        </member>
-        <member name="M:NetOffice.OfficeApi.Tools.CommonUtils.OnCreateHostInfo">
-            <summary>
-            Creates an instance of HostInfo
-            </summary>
-            <returns>instance of HostInfo</returns>
-        </member>
-        <member name="M:NetOffice.OfficeApi.Tools.CommonUtils.TryGetApplicationVersion">
-            <summary>
-            Try to detect current host application version. (All MS-Office products supports the version property except for Access9 aka Access 2000)
-            </summary>
-            <returns>version or null if its failed to detect</returns>
-        </member>
-        <member name="M:NetOffice.OfficeApi.Tools.CommonUtils.Dispose">
-            <summary>
-            Dispose the instance and cleanup/discard resources
-            </summary>
-        </member>
-        <member name="P:NetOffice.OfficeApi.Tools.CommonUtils.Owner">
-            <summary>
-            Addin Owner Instance. Can be null if its used in custom application
-            </summary>
-        </member>
-        <member name="P:NetOffice.OfficeApi.Tools.CommonUtils.ApplicationIs2007OrHigher">
-            <summary>
-            The Office Host Application is in Version 12.00 or higher
-            </summary>
-        </member>
-        <member name="P:NetOffice.OfficeApi.Tools.CommonUtils.AdminPermissions">
-            <summary>
-            Current domain has elevated permissions
-            </summary>
-        </member>
-        <member name="P:NetOffice.OfficeApi.Tools.CommonUtils.IsAutomation">
-            <summary>
-            The host application is currently in automation mode. In this case, avoid any kind of dialogs or something like that 
-            </summary>
-        </member>
-        <member name="P:NetOffice.OfficeApi.Tools.CommonUtils.Dialog">
-            <summary>
-            Dialog related utils
-            </summary>
-        </member>
-        <member name="P:NetOffice.OfficeApi.Tools.CommonUtils.Resource">
-            <summary>
-            Resource related utils
-            </summary>
-        </member>
-        <member name="P:NetOffice.OfficeApi.Tools.CommonUtils.Tray">
-            <summary>
-            Tray related utils
-            </summary>
-        </member>
-        <member name="P:NetOffice.OfficeApi.Tools.CommonUtils.Image">
-            <summary>
-            Image related utils
-            </summary>
-        </member>
-        <member name="P:NetOffice.OfficeApi.Tools.CommonUtils.Color">
-            <summary>
-            Color related utils
-            </summary>
-        </member>
-        <member name="P:NetOffice.OfficeApi.Tools.CommonUtils.Infos">
-            <summary>
-            Various system informations
-            </summary>
-        </member>
-        <member name="P:NetOffice.OfficeApi.Tools.CommonUtils.HeaderCaptionLine">
-            <summary>
-            Fill header line in summary info as visual seperator
-            </summary>
-        </member>
-        <member name="P:NetOffice.OfficeApi.Tools.CommonUtils.HeaderCaptionLineDefault">
-            <summary>
-            Header line for summary if ToolsUtils is used in custom applications
-            </summary>
-        </member>
-        <member name="P:NetOffice.OfficeApi.Tools.CommonUtils.OwnerAssembly">
-            <summary>
-            Assembly informations used in AssemblyInfo
-            </summary>
-        </member>
-        <member name="P:NetOffice.OfficeApi.Tools.CommonUtils.OwnerApplication">
-            <summary>
-            Office Owner Application
-            </summary>
-        </member>
         <member name="T:NetOffice.OfficeApi.Tools.Dialogs.AboutDialog">
             <summary>
             Show about info to the user
@@ -673,7 +505,7 @@
             Creates an instance of the class
             </summary>
         </member>
-        <member name="M:NetOffice.OfficeApi.Tools.Informations.AppDomainInfo.#ctor(NetOffice.OfficeApi.Tools.CommonUtils)">
+        <member name="M:NetOffice.OfficeApi.Tools.Informations.AppDomainInfo.#ctor(NetOffice.OfficeApi.Tools.Utils.CommonUtils)">
             <summary>
             Creates an instance of the class
             </summary>
@@ -684,6 +516,12 @@
             Do analyze in current appdomain
             </summary>
             <returns>loaded assemblies as name=>version collection</returns>
+        </member>
+        <member name="M:NetOffice.OfficeApi.Tools.Informations.AppDomainInfo.GetEnumerator">
+            <summary>
+            Returns an enumerator to retrieve the collection
+            </summary>
+            <returns>IEnumerator instance</returns>
         </member>
         <member name="P:NetOffice.OfficeApi.Tools.Informations.AppDomainInfo.HeaderCaptionLine">
             <summary>
@@ -706,7 +544,7 @@
             </summary>
             <param name="ownerAssembly">owner Assembly</param>
         </member>
-        <member name="M:NetOffice.OfficeApi.Tools.Informations.AssemblyInfo.#ctor(NetOffice.OfficeApi.Tools.CommonUtils)">
+        <member name="M:NetOffice.OfficeApi.Tools.Informations.AssemblyInfo.#ctor(NetOffice.OfficeApi.Tools.Utils.CommonUtils)">
             <summary>
             Creates an instance of the class
             </summary>
@@ -720,15 +558,9 @@
         </member>
         <member name="M:NetOffice.OfficeApi.Tools.Informations.AssemblyInfo.GetEnumerator">
             <summary>
-            Returns a summary enumerator collect instance properties
+            Returns an enumerator to retrieve the collection
             </summary>
-            <returns>summary enumerator</returns>
-        </member>
-        <member name="M:NetOffice.OfficeApi.Tools.Informations.AssemblyInfo.System#Collections#IEnumerable#GetEnumerator">
-            <summary>
-            Returns a summary enumerator collect instance properties
-            </summary>
-            <returns>summary enumerator</returns>
+            <returns>IEnumerator instance</returns>
         </member>
         <member name="P:NetOffice.OfficeApi.Tools.Informations.AssemblyInfo.AssemblyTitle">
             <summary>
@@ -808,7 +640,7 @@
             Analyze the current environment in detail and save the result in its collection
             </summary>
         </member>
-        <member name="M:NetOffice.OfficeApi.Tools.Informations.DiagnosticPairCollection.#ctor(NetOffice.OfficeApi.Tools.CommonUtils)">
+        <member name="M:NetOffice.OfficeApi.Tools.Informations.DiagnosticPairCollection.#ctor(NetOffice.OfficeApi.Tools.Utils.CommonUtils)">
             <summary>
             Creates an instance of the class
             </summary>
@@ -844,7 +676,7 @@
             Environment related utils (Supports also the internal NetOffice infrastructure)
             </summary>
         </member>
-        <member name="M:NetOffice.OfficeApi.Tools.Informations.EnvironmentInfo.#ctor(NetOffice.OfficeApi.Tools.CommonUtils)">
+        <member name="M:NetOffice.OfficeApi.Tools.Informations.EnvironmentInfo.#ctor(NetOffice.OfficeApi.Tools.Utils.CommonUtils)">
             <summary>
             Creates an instance of the class
             </summary>
@@ -858,15 +690,9 @@
         </member>
         <member name="M:NetOffice.OfficeApi.Tools.Informations.EnvironmentInfo.System#Collections#Generic#IEnumerable{System#Collections#Generic#KeyValuePair{System#String@System#String}}#GetEnumerator">
             <summary>
-            Returns a summary enumerator collect instance properties
+            Returns an enumerator to retrieve the collection
             </summary>
-            <returns>summary enumerator</returns>
-        </member>
-        <member name="M:NetOffice.OfficeApi.Tools.Informations.EnvironmentInfo.System#Collections#IEnumerable#GetEnumerator">
-            <summary>
-            Returns a summary enumerator collect instance properties
-            </summary>
-            <returns>summary enumerator</returns>
+            <returns>IEnumerator instance</returns>
         </member>
         <member name="P:NetOffice.OfficeApi.Tools.Informations.EnvironmentInfo.Is64BitOperatingSystem">
             <summary>
@@ -905,10 +731,10 @@
         </member>
         <member name="T:NetOffice.OfficeApi.Tools.Informations.HostInfo">
             <summary>
-            Office Application and NetOffice related utils
+            Office Application and NetOffice related diagnostic informations
             </summary>
         </member>
-        <member name="M:NetOffice.OfficeApi.Tools.Informations.HostInfo.#ctor(NetOffice.OfficeApi.Tools.CommonUtils)">
+        <member name="M:NetOffice.OfficeApi.Tools.Informations.HostInfo.#ctor(NetOffice.OfficeApi.Tools.Utils.CommonUtils)">
             <summary>
             Creates an instance of the class
             </summary>
@@ -922,9 +748,9 @@
         </member>
         <member name="M:NetOffice.OfficeApi.Tools.Informations.HostInfo.System#Collections#Generic#IEnumerable{System#Collections#Generic#KeyValuePair{System#String@System#String}}#GetEnumerator">
             <summary>
-            Returns a summary enumerator collect instance properties
+            Returns an enumerator to retrieve the collection
             </summary>
-            <returns>summary enumerator</returns>
+            <returns>IEnumerator instance</returns>
         </member>
         <member name="M:NetOffice.OfficeApi.Tools.Informations.HostInfo.System#Collections#IEnumerable#GetEnumerator">
             <summary>
@@ -947,7 +773,7 @@
             Contains various information subsets
             </summary>
         </member>
-        <member name="M:NetOffice.OfficeApi.Tools.Informations.Infos.#ctor(NetOffice.OfficeApi.Tools.CommonUtils)">
+        <member name="M:NetOffice.OfficeApi.Tools.Informations.Infos.#ctor(NetOffice.OfficeApi.Tools.Utils.CommonUtils)">
             <summary>
             Creates an instance of the class
             </summary>
@@ -989,7 +815,7 @@
             Color related helper tools
             </summary>
         </member>
-        <member name="M:NetOffice.OfficeApi.Tools.Utils.ColorUtils.#ctor(NetOffice.OfficeApi.Tools.CommonUtils)">
+        <member name="M:NetOffice.OfficeApi.Tools.Utils.ColorUtils.#ctor(NetOffice.OfficeApi.Tools.Utils.CommonUtils)">
             <summary>
             Creates an instance of the class
             </summary>
@@ -1007,12 +833,187 @@
             <param name="color">target color to convert</param>
             <returns>color argument as double</returns>
         </member>
+        <member name="M:NetOffice.OfficeApi.Tools.Utils.ColorUtils.ToColor(System.Double)">
+            <summary>
+            Converts a double to its color representation
+            </summary>
+            <param name="color">target color to convert</param>
+            <returns>color argument as System.Drawing.Color</returns>
+        </member>
+        <member name="T:NetOffice.OfficeApi.Tools.Utils.CommonUtils">
+            <summary>
+            Various helper for common tasks
+            </summary>
+        </member>
+        <member name="M:NetOffice.OfficeApi.Tools.Utils.CommonUtils.#ctor(NetOffice.COMObject)">
+            <summary>
+            Creates an instance of the application
+            </summary>
+            <param name="application">owner application</param>
+        </member>
+        <member name="M:NetOffice.OfficeApi.Tools.Utils.CommonUtils.#ctor(NetOffice.COMObject,System.Reflection.Assembly)">
+            <summary>
+            Creates an instance of the application
+            </summary>
+            <param name="application">owner application</param>
+            <param name="ownerAssembly">owner assembly</param>
+        </member>
+        <member name="M:NetOffice.OfficeApi.Tools.Utils.CommonUtils.#ctor(NetOffice.Tools.COMAddinBase,System.Boolean)">
+            <summary>
+            Creates an instance of the class
+            </summary>
+            <param name="owner">addin owner instance</param>
+            <param name="isAutomation">host application is started for automation</param>
+        </member>
+        <member name="M:NetOffice.OfficeApi.Tools.Utils.CommonUtils.#ctor(NetOffice.Tools.COMAddinBase,System.Boolean,System.Reflection.Assembly)">
+            <summary>
+            Creates an instance of the class
+            </summary>
+            <param name="owner">addin owner</param>
+            <param name="isAutomation">indicates the host application is currently in automation</param>
+            <param name="ownerAssembly">owner application</param>
+        </member>
+        <member name="M:NetOffice.OfficeApi.Tools.Utils.CommonUtils.OnCreateDialogUtils">
+            <summary>
+            Creates an instance of DialogUtils
+            </summary>
+            <returns>instance of DialogUtils</returns>
+        </member>
+        <member name="M:NetOffice.OfficeApi.Tools.Utils.CommonUtils.OnCreateResourceUtils">
+            <summary>
+            Creates an instances of ResourceUtils
+            </summary>
+            <returns>instance of ResourceUtils</returns>
+        </member>
+        <member name="M:NetOffice.OfficeApi.Tools.Utils.CommonUtils.OnCreateTrayUtils">
+            <summary>
+            Creates an instance of TrayUtils
+            </summary>
+            <returns>instance of TrayUtils</returns>
+        </member>
+        <member name="M:NetOffice.OfficeApi.Tools.Utils.CommonUtils.OnCreateImageUtils">
+            <summary>
+            Creates an instance of ImageUtils
+            </summary>
+            <returns>instance of ImageUtils</returns>
+        </member>
+        <member name="M:NetOffice.OfficeApi.Tools.Utils.CommonUtils.OnCreateColorUtils">
+            <summary>
+            Creates an instance of FileUtils
+            </summary>
+            <returns>instance of ColorUtils</returns>
+        </member>
+        <member name="M:NetOffice.OfficeApi.Tools.Utils.CommonUtils.OnCreateAssemblyInfo">
+            <summary>
+            Creates an instance of AssemblyInfo
+            </summary>
+            <returns>instance of AssemblyInfo</returns>
+        </member>
+        <member name="M:NetOffice.OfficeApi.Tools.Utils.CommonUtils.OnCreateAppDomainInfo">
+            <summary>
+            Creates an instance of AppDomainInfo
+            </summary>
+            <returns>instance of AppDomainInfo</returns>
+        </member>
+        <member name="M:NetOffice.OfficeApi.Tools.Utils.CommonUtils.OnCreateEnvironmentInfo">
+            <summary>
+            Creates an instance of EnvironmentInfo
+            </summary>
+            <returns>instance of EnvironmentInfo</returns>
+        </member>
+        <member name="M:NetOffice.OfficeApi.Tools.Utils.CommonUtils.OnCreateHostInfo">
+            <summary>
+            Creates an instance of HostInfo
+            </summary>
+            <returns>instance of HostInfo</returns>
+        </member>
+        <member name="M:NetOffice.OfficeApi.Tools.Utils.CommonUtils.TryGetApplicationVersion">
+            <summary>
+            Try to detect current host application version. (All MS-Office products supports the version property except for Access9 aka Access 2000)
+            </summary>
+            <returns>version or null if its failed to detect</returns>
+        </member>
+        <member name="M:NetOffice.OfficeApi.Tools.Utils.CommonUtils.Dispose">
+            <summary>
+            Dispose the instance and cleanup/discard resources
+            </summary>
+        </member>
+        <member name="P:NetOffice.OfficeApi.Tools.Utils.CommonUtils.Owner">
+            <summary>
+            Addin Owner Instance. Can be null if its used in custom application
+            </summary>
+        </member>
+        <member name="P:NetOffice.OfficeApi.Tools.Utils.CommonUtils.ApplicationIs2007OrHigher">
+            <summary>
+            The Office Host Application is in Version 12.00 or higher
+            </summary>
+        </member>
+        <member name="P:NetOffice.OfficeApi.Tools.Utils.CommonUtils.AdminPermissions">
+            <summary>
+            Current domain has elevated permissions
+            </summary>
+        </member>
+        <member name="P:NetOffice.OfficeApi.Tools.Utils.CommonUtils.IsAutomation">
+            <summary>
+            The host application is currently in automation mode. In this case, avoid any kind of dialogs or something like that 
+            </summary>
+        </member>
+        <member name="P:NetOffice.OfficeApi.Tools.Utils.CommonUtils.Dialog">
+            <summary>
+            Dialog related utils
+            </summary>
+        </member>
+        <member name="P:NetOffice.OfficeApi.Tools.Utils.CommonUtils.Resource">
+            <summary>
+            Resource related utils
+            </summary>
+        </member>
+        <member name="P:NetOffice.OfficeApi.Tools.Utils.CommonUtils.Tray">
+            <summary>
+            Tray related utils
+            </summary>
+        </member>
+        <member name="P:NetOffice.OfficeApi.Tools.Utils.CommonUtils.Image">
+            <summary>
+            Image related utils
+            </summary>
+        </member>
+        <member name="P:NetOffice.OfficeApi.Tools.Utils.CommonUtils.Color">
+            <summary>
+            Color related utils
+            </summary>
+        </member>
+        <member name="P:NetOffice.OfficeApi.Tools.Utils.CommonUtils.Infos">
+            <summary>
+            Various system informations
+            </summary>
+        </member>
+        <member name="P:NetOffice.OfficeApi.Tools.Utils.CommonUtils.HeaderCaptionLine">
+            <summary>
+            Fill header line in summary info as visual seperator
+            </summary>
+        </member>
+        <member name="P:NetOffice.OfficeApi.Tools.Utils.CommonUtils.HeaderCaptionLineDefault">
+            <summary>
+            Header line for summary if ToolsUtils is used in custom applications
+            </summary>
+        </member>
+        <member name="P:NetOffice.OfficeApi.Tools.Utils.CommonUtils.OwnerAssembly">
+            <summary>
+            Assembly informations used in AssemblyInfo
+            </summary>
+        </member>
+        <member name="P:NetOffice.OfficeApi.Tools.Utils.CommonUtils.OwnerApplication">
+            <summary>
+            Office Owner Application
+            </summary>
+        </member>
         <member name="T:NetOffice.OfficeApi.Tools.Utils.DialogUtils">
             <summary>
             Dialog related utils
             </summary>
         </member>
-        <member name="M:NetOffice.OfficeApi.Tools.Utils.DialogUtils.#ctor(NetOffice.OfficeApi.Tools.CommonUtils)">
+        <member name="M:NetOffice.OfficeApi.Tools.Utils.DialogUtils.#ctor(NetOffice.OfficeApi.Tools.Utils.CommonUtils)">
             <summary>
             Creates an instance of the class
             </summary>
@@ -1459,7 +1460,7 @@
             Image related utils
             </summary>
         </member>
-        <member name="M:NetOffice.OfficeApi.Tools.Utils.ImageUtils.#ctor(NetOffice.OfficeApi.Tools.CommonUtils)">
+        <member name="M:NetOffice.OfficeApi.Tools.Utils.ImageUtils.#ctor(NetOffice.OfficeApi.Tools.Utils.CommonUtils)">
             <summary>
             Creates an instance of the class
             </summary>
@@ -1491,7 +1492,7 @@
             Resource related utils
             </summary>
         </member>
-        <member name="M:NetOffice.OfficeApi.Tools.Utils.ResourceUtils.#ctor(NetOffice.OfficeApi.Tools.CommonUtils)">
+        <member name="M:NetOffice.OfficeApi.Tools.Utils.ResourceUtils.#ctor(NetOffice.OfficeApi.Tools.Utils.CommonUtils)">
             <summary>
             Creates an instance of the class
             </summary>
@@ -1562,7 +1563,7 @@
             Tray related utils
             </summary>
         </member>
-        <member name="M:NetOffice.OfficeApi.Tools.Utils.TrayUtils.#ctor(NetOffice.OfficeApi.Tools.CommonUtils)">
+        <member name="M:NetOffice.OfficeApi.Tools.Utils.TrayUtils.#ctor(NetOffice.OfficeApi.Tools.Utils.CommonUtils)">
             <summary>
             Creates an instance of the class
             </summary>
@@ -51428,7 +51429,8 @@
         </member>
         <member name="T:NetOffice.OfficeApi.Tools.ITaskPane">
             <summary>
-            Task pane UserControl instances can implement these interface in a NetOffice Tools Addin as a special service
+            Office TaskPane UserControl classes can implement these interface in a NetOffice Tools Addin(COMAddin) as a special service.
+            NetOffice want call ITaskPane members automaticly 
             </summary>
         </member>
         <member name="M:NetOffice.OfficeApi.Tools.ITaskPane.OnConnection(NetOffice.COMObject,NetOffice.OfficeApi._CustomTaskPane,System.Object[])">
@@ -51441,7 +51443,7 @@
         </member>
         <member name="M:NetOffice.OfficeApi.Tools.ITaskPane.OnDisconnection">
             <summary>
-            While Excel Application shutdown. The method is not called in case of unexpected termination (may user kill the instance in task manager)
+            While Office Application shutdown. The method is not called in case of unexpected termination (may user kills the instance in task manager)
             </summary>
         </member>
         <member name="M:NetOffice.OfficeApi.Tools.ITaskPane.OnDockPositionChanged(NetOffice.OfficeApi.Enums.MsoCTPDockPosition)">
@@ -51458,7 +51460,7 @@
         </member>
         <member name="T:NetOffice.OfficeApi.Tools.TaskPaneInfo">
             <summary>
-            wrapper class for CustomTaskPane instance
+            Wrapper class for CustomTaskPane instance, also used as creation definition if its create before CTPFactoryAvailable is called from MS-Office host application. (Best use in .ctor for creation definition)
             </summary>
         </member>
         <member name="M:NetOffice.OfficeApi.Tools.TaskPaneInfo.#ctor(System.Type,System.String)">
@@ -51491,6 +51493,11 @@
         <member name="E:NetOffice.OfficeApi.Tools.TaskPaneInfo.DockPositionStateChange">
             <summary>
             Occurs when dock postion state is changed
+            </summary>
+        </member>
+        <member name="P:NetOffice.OfficeApi.Tools.TaskPaneInfo.DefaultSize">
+            <summary>
+            Default Height or Width if unset - 150
             </summary>
         </member>
         <member name="P:NetOffice.OfficeApi.Tools.TaskPaneInfo.ChangedProperties">
@@ -51638,12 +51645,12 @@
         </member>
         <member name="T:NetOffice.OfficeApi.Tools.MultiRegisterAttribute">
             <summary>
-            This attribute can be used from NetOffice.OfficeApi.Tools.COMAddin to specify multipe office products
+            This attribute must be used for NetOffice.OfficeApi.Tools.COMAddin to specify multipe office products you want support
             </summary>
         </member>
         <member name="F:NetOffice.OfficeApi.Tools.MultiRegisterAttribute.Products">
             <summary>
-            The office products for addin registration
+            The office products for addin (un-)registration
             </summary>
         </member>
         <member name="M:NetOffice.OfficeApi.Tools.MultiRegisterAttribute.#ctor(NetOffice.OfficeApi.Tools.RegisterIn[])">
@@ -51657,7 +51664,7 @@
             Looks for the MultiRegisterAttribute. Throws an exception if not found
             </summary>
             <param name="type">the type you want looking for the attribute</param>
-            <returns>MultiRegisterAttribute</returns>
+            <returns>MultiRegisterAttribute instance</returns>
         </member>
         <member name="M:NetOffice.OfficeApi.Tools.MultiRegisterAttribute.RegistryEntry(NetOffice.OfficeApi.Tools.RegisterIn)">
             <summary>
